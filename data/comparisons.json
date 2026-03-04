@@ -1,0 +1,132 @@
+{
+  "kirbyComparisonData": [
+    {
+      "model": "Avalir 2",
+      "year": "2017",
+      "suction": 5,
+      "pet": true,
+      "shampoo": true,
+      "warranty": "5-Year",
+      "price": "$899+"
+    },
+    {
+      "model": "Avalir",
+      "year": "2014",
+      "suction": 5,
+      "pet": true,
+      "shampoo": true,
+      "warranty": "5-Year",
+      "price": "$749+"
+    },
+    {
+      "model": "Sentria II",
+      "year": "2012",
+      "suction": 4,
+      "pet": true,
+      "shampoo": true,
+      "warranty": "5-Year",
+      "price": "$719+"
+    },
+    {
+      "model": "Sentria",
+      "year": "2012",
+      "suction": 4,
+      "pet": true,
+      "shampoo": true,
+      "warranty": "5-Year",
+      "price": "$669+"
+    },
+    {
+      "model": "Ultimate G",
+      "year": "2006",
+      "suction": 4,
+      "pet": false,
+      "shampoo": true,
+      "warranty": "5-Year",
+      "price": "$549+"
+    },
+    {
+      "model": "G6",
+      "year": "2004",
+      "suction": 4,
+      "pet": false,
+      "shampoo": true,
+      "warranty": "5-Year",
+      "price": "$469+"
+    }
+  ],
+  "rainbowComparisonData": [
+    {
+      "model": "D4 Model",
+      "power": "72 CFM",
+      "filtration": "Water",
+      "features": "2 Non Electric Hoses",
+      "shampooer": "Aquamate 1 / Prolux Storm",
+      "warranty": "5-Year",
+      "price": "$799+"
+    },
+    {
+      "model": "SE Model",
+      "power": "72 CFM",
+      "filtration": "Water",
+      "features": "1 Electric Hose",
+      "shampooer": "Aquamate 1 / Prolux Storm",
+      "warranty": "5-Year",
+      "price": "$949+"
+    },
+    {
+      "model": "SE/PN2",
+      "power": "72 CFM",
+      "filtration": "Water",
+      "features": "1 Electric Hose w/ Trigger",
+      "shampooer": "Aquamate 1 / Prolux Storm",
+      "warranty": "5-Year",
+      "price": "$979+"
+    },
+    {
+      "model": "E Series",
+      "power": "80 CFM",
+      "filtration": "Water & HEPA",
+      "features": "1 Electric + 1 Wet Hose",
+      "shampooer": "Aquamate 1&2 / Prolux Storm",
+      "warranty": "5-Year",
+      "price": "$999+"
+    },
+    {
+      "model": "E2 Gold 2 Speed",
+      "power": "80+ CFM",
+      "filtration": "Water & HEPA",
+      "features": "1 Electric + 1 Wet Hose",
+      "shampooer": "Aquamate 1,2,3 / Prolux Storm",
+      "warranty": "5-Year",
+      "price": "$999+"
+    },
+    {
+      "model": "E2 Blue 2 Speed",
+      "power": "80+ CFM",
+      "filtration": "Water & HEPA",
+      "features": "1 Electric + 1 Wet Hose",
+      "shampooer": "Aquamate 1,2,3 / Prolux Storm",
+      "warranty": "5-Year",
+      "price": "$1,059+"
+    },
+    {
+      "model": "E2 Black 2 Speed",
+      "power": "80+ CFM",
+      "filtration": "Water & HEPA",
+      "features": "1 Electric Hose (Wet/Dry)",
+      "shampooer": "Aquamate 3 Only",
+      "warranty": "5-Year",
+      "price": "$1,159+"
+    },
+    {
+      "model": "SRX 4 Speed",
+      "power": "80+ CFM",
+      "filtration": "Water & HEPA",
+      "features": "1 Electric Hose (Wet/Dry)",
+      "shampooer": "Aquamate 3 Only",
+      "warranty": "5-Year",
+      "price": "$1,499+"
+    }
+  ]
+}

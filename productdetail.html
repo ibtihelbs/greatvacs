@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>
+      GreatVacs — Premium Rebuilt Kirby & Rainbow Vacuums - Collections
+    </title>
+  </head>
+  <body>
+    <section class="product-detail-hero">
+      <div class="container">
+        <nav class="breadcrumb" style="margin-bottom: 1.5rem">
+          <a
+            href="#"
+            onclick="
+              navigate('home');
+              return false;
+            "
+            >Home</a
+          >
+          <svg
+            viewBox="0 0 24 24"
+            width="12"
+            height="12"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+          <a
+            href="#"
+            onclick="
+              navigate('collections');
+              return false;
+            "
+            >Collections</a
+          >
+          <svg
+            viewBox="0 0 24 24"
+            width="12"
+            height="12"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+          <span id="pd-breadcrumb" style="color: var(--fg)">Product</span>
+        </nav>
+        <div class="product-detail-grid">
+          <div>
+            <div class="main-image-wrap">
+              <img
+                id="pd-main-img"
+                src=""
+                alt="Product"
+                onerror="this.src = ''"
+              />
+            </div>
+            <div class="thumb-row" id="pd-thumbs"></div>
+          </div>
+          <div>
+            <div class="rebuilt-badge-sm" id="pd-brand-badge">
+              Professionally Rebuilt Kirby
+            </div>
+            <h1 class="product-detail-title" id="pd-title">Product Title</h1>
+            <div class="product-stars">
+              <div class="stars" id="pd-stars"></div>
+              <a
+                href="#pd-reviews-section"
+                style="
+                  font-size: 0.875rem;
+                  color: var(--primary);
+                  text-decoration: underline;
+                  margin-left: 0.25rem;
+                "
+                >(See Reviews)</a
+              >
+              <span style="margin: 0 0.5rem; color: var(--border)">|</span>
+              <a
+                href="#pd-specs-section"
+                style="
+                  font-size: 0.875rem;
+                  color: var(--primary);
+                  text-decoration: underline;
+                "
+                >Specs</a
+              >
+            </div>
+            <div class="price-block">
+              <p class="big-price" id="pd-price">$0</p>
+              <p class="retail-price" id="pd-retail">Retail new: $0</p>
+              <p class="savings" id="pd-savings">You save over $0</p>
+            </div>
+            <p
+              style="
+                font-size: 0.8125rem;
+                line-height: 1.6;
+                color: var(--muted-fg);
+                background: var(--secondary);
+                border-radius: 0.375rem;
+                padding: 0.75rem;
+                margin-bottom: 1rem;
+              "
+              id="pd-condition-note"
+            >
+              This vacuum has been professionally rebuilt and tested to qualify
+              for our 5-year warranty and 60-day Money Back Promise.
+            </p>
+            <button
+              class="add-to-cart-btn"
+              id="pd-add-btn"
+              onclick="pdAddCart()"
+            >
+              <svg viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1" />
+                <circle cx="20" cy="21" r="1" />
+                <path
+                  d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                />
+              </svg>
+              Add to Cart
+            </button>
+            <div class="product-trust-strip">
+              <span
+                ><svg
+                  class="pts"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--trust)"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                >
+                  <path d="M20 6L9 17l-5-5" /></svg
+                >5-Year Motor Warranty</span
+              >
+              <span
+                ><svg
+                  class="pts"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--trust)"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                >
+                  <path d="M20 6L9 17l-5-5" /></svg
+                >60-Day Money-Back</span
+              >
+              <span
+                ><svg
+                  class="pts"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--primary)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="1" y="3" width="15" height="13" rx="2" />
+                  <path d="M16 8h4l3 5v3h-7V8z" />
+                  <circle cx="5.5" cy="18.5" r="2.5" />
+                  <circle cx="18.5" cy="18.5" r="2.5" /></svg
+                >Ships from USA</span
+              >
+              <span
+                ><svg
+                  class="pts"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--primary)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" /></svg
+                >Real Support</span
+              >
+            </div>
+            <div style="margin-top: 1.5rem">
+              <p class="accessories-title">Accessories That Fit This Vacuum</p>
+              <div class="acc-grid" id="pd-accessories"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pd-section" style="background: var(--bg)">
+      <div class="container" style="max-width: 680px">
+        <h2>What You'll Receive</h2>
+        <ul class="receive-list" id="pd-receive"></ul>
+        <p
+          style="
+            margin-top: 1rem;
+            font-size: 0.75rem;
+            color: var(--muted-fg);
+            font-style: italic;
+          "
+        >
+          Note: Accessories may vary slightly between units. All core components
+          are rebuilt to spec.
+        </p>
+      </div>
+    </section>
+
+    <!-- VIDEO SECTION (Section 5 from PDF) -->
+    <section class="pd-section" style="background: var(--card)">
+      <div class="container" style="max-width: 680px">
+        <h2>See It in Action</h2>
+        <p
+          style="
+            color: var(--muted-fg);
+            margin-bottom: 1.25rem;
+            font-size: 0.9375rem;
+          "
+        >
+          A 60-second look at what "professionally rebuilt" really means — and
+          what you can expect when yours arrives.
+        </p>
+        <div
+          style="
+            background: var(--secondary);
+            border-radius: 0.75rem;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border);
+          "
+        >
+          <div style="text-align: center">
+            <div
+              style="
+                width: 64px;
+                height: 64px;
+                background: var(--primary);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+              "
+            >
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="white">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--muted-fg)">
+              Video coming soon
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY REBUILT (Section 6) -->
+    <section class="pd-section gradient-navy">
+      <div class="container" style="max-width: 680px">
+        <h2 style="color: var(--primary-fg)">Why Buy Rebuilt?</h2>
+        <div class="why-grid" id="pd-why"></div>
+      </div>
+    </section>
+
+    <!-- REVIEWS MID-PAGE (Section 7 — PDF says don't bury at bottom) -->
+    <section
+      class="pd-section"
+      style="background: var(--card)"
+      id="pd-reviews-section"
+    >
+      <div class="container" style="max-width: 680px">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-list" id="pd-reviews"></div>
+      </div>
+    </section>
+
+    <!-- SPECS — COLLAPSIBLE (Section 8) -->
+    <section
+      class="pd-section"
+      style="background: var(--bg)"
+      id="pd-specs-section"
+    >
+      <div class="container" style="max-width: 680px">
+        <button
+          onclick="
+            this.nextElementSibling.style.display =
+              this.nextElementSibling.style.display === 'none'
+                ? 'block'
+                : 'none';
+            this.querySelector('.specs-arrow').style.transform =
+              this.nextElementSibling.style.display === 'none'
+                ? 'rotate(0deg)'
+                : 'rotate(180deg)';
+          "
+          style="
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            text-align: left;
+          "
+        >
+          <h2 style="margin-bottom: 0">Technical Specifications</h2>
+          <svg
+            class="specs-arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="var(--primary)"
+            stroke-width="2"
+            style="
+              transition: transform 0.2s;
+              transform: rotate(180deg);
+              flex-shrink: 0;
+            "
+          >
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+        <div>
+          <div
+            class="specs-grid"
+            id="pd-specs"
+            style="margin-top: 1.25rem"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (Section 9 — objection killers only) -->
+    <section class="pd-section" style="background: var(--card)">
+      <div class="container" style="max-width: 680px">
+        <h2>Frequently Asked Questions</h2>
+        <div id="pd-faq"></div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA WITH REASSURANCE (Section 10) -->
+    <section class="final-cta gradient-navy">
+      <div class="container">
+        <p
+          style="
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+          "
+        >
+          Still deciding?
+        </p>
+        <h2>Try It in Your Home for 60 Days — Risk Free.</h2>
+        <p
+          style="
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0.75rem 0 1.5rem;
+            font-size: 1rem;
+          "
+        >
+          If it's not right for you, send it back for a full refund. No
+          questions asked.
+        </p>
+        <button class="btn btn-accent btn-xl" onclick="pdAddCart()">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path
+              d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+            />
+          </svg>
+          Add to Cart
+        </button>
+      </div>
+    </section>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
