@@ -755,9 +755,9 @@ function renderProductCard(p) {
           ${saved && saved > 0 ? `<span class="save-badge">Save $${saved.toLocaleString()}</span>` : ""}
         </div>
         <div class="warranty-strip">
-          <span><svg class="wc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>5-Year Warranty</span>
-          <span><svg class="wc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>60-Day Return</span>
-          <span><svg class="wc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>USA Ships</span>
+          <span><svg class="wc" viewBox="0 0 24 24" fill="none" stroke="current-color" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>5-Year Warranty</span>
+          <span><svg class="wc" viewBox="0 0 24 24" fill="none" stroke="current-color" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>60-Day Return</span>
+          <span><svg class="wc" viewBox="0 0 24 24" fill="none" stroke="current-color" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>USA Ships</span>
         </div>
         <div class="product-ctas">
           <button class="btn-add-cart" onclick="addToCart(this, ${p.id})">Add to Cart</button>
@@ -969,7 +969,7 @@ function openProduct(id) {
     .map(
       (i) => `
     <li>
-      <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+      <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="current-color" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
       ${i}
     </li>`,
     )
@@ -994,7 +994,7 @@ function openProduct(id) {
     .map(
       (t) => `
     <div class="why-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="current-color" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
       <span>${t}</span>
     </div>`,
     )
@@ -1075,7 +1075,7 @@ function pdAddCart() {
   const btn = document.getElementById("pd-add-btn");
   btn.textContent = "✔ Added to Cart!";
   setTimeout(() => {
-    btn.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Add to Cart`;
+    btn.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="current-color" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Add to Cart`;
   }, 2000);
 }
 
